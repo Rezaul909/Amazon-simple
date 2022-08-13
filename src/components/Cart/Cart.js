@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import './Cart.css'
 
 const Cart = ({cart}) => {
@@ -8,7 +10,6 @@ const Cart = ({cart}) => {
     for(const product of cart){
         total = total + product.price;
         totalShippingCost = totalShippingCost + product.shipping;
-       
     }
     const tax = (total*5)/100;
     let grandTotal = total + totalShippingCost + tax;
@@ -22,6 +23,13 @@ const Cart = ({cart}) => {
                 <p>Total Shipping Charge : ${totalShippingCost} </p>
                 <p>Tax : ${tax} </p>
                 <h5>Grand Total: ${grandTotal} </h5>
+
+                <button className="clear-btn mt-5 text-center border-0 p-3 ">
+                    Clear Cart &#160; <FontAwesomeIcon icon={faTrashAlt} ></FontAwesomeIcon>
+                </button>
+                <button className="review-btn mt-3 text-center border-0 p-3 ">
+                    Review Order &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
+                </button>
             </div>
         </div>
     );

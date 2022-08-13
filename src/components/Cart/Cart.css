@@ -2,3 +2,18 @@
     position: sticky;
     top: 0;
 }
+
+.clear-btn{
+    width: 90%;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: #FF3030;
+}
+.review-btn{
+    width: 90%;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: orange;
+}
