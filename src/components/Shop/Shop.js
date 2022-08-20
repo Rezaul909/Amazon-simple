@@ -22,7 +22,7 @@ const Shop = () => {
             }
         }
         setCart(savedCart);
-    },[products])
+    },[products]);
 
     const [cart, setCart] = useState([]);
 
