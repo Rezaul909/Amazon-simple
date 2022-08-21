@@ -1,0 +1,40 @@
+
+.review-item{
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: flex;
+    
+}
+.highlight{
+    color: orange;
+}
+
+.img-container img{
+    height: 100px;
+    border-radius: 8px;
+}
+
+.product-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-info-container p{
+    margin: 0;
+}
+.trash-btn{
+    height: 55px;
+    width: 55px;
+    border: none;
+    background-color:  #EB57574D;
+    ;
+    border-radius: 50px;
+}
+.trash-icon{
+    color:  #EB5757;
+    font-size: 30px;
+    
+}

@@ -14,7 +14,7 @@ const useCart = (products) =>{
                 const quantity= storedCart[id];
                 addedProduct.quantity = quantity;
                 savedCart.push(addedProduct)
-                console.log(addedProduct);
+                // console.log(addedProduct);
             }
         }
         setCart(savedCart);
