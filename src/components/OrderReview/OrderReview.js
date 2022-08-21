@@ -4,6 +4,9 @@ import useProducts from '../../Hook/useProducts';
 import { removeFromDb } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const OrderReview = () => {
     const [products, setProducts] = useProducts()
@@ -23,7 +26,13 @@ const OrderReview = () => {
                 }
             </div>
             <div className="order-summery pb-5">
-                <Cart cart={cart} ></Cart>
+                <Cart cart={cart} >
+                    <Link to='/shop'>
+                        <button className="review-btn mt-3 text-center border-0 p-3 ">
+                        Proceed Checkout &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
+                        </button>
+                    </Link>
+                </Cart>
             </div>
         </div>
     );
