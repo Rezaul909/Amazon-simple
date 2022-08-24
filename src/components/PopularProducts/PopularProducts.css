@@ -1,0 +1,54 @@
+.popular-collections-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .collection-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .item {
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 10px 40px 0px rgb(172, 170, 170);
+  }
+  .item:hover {
+    transform: scale(1.03);
+    transition: transform 0.4s ease-in;
+  }
+  .item-image img {
+    width: 100%;
+  }
+  .item-name {
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  .price {
+    font-size: 24px;
+    margin: 0;
+  }
+  .filled {
+    color: #ffc014;
+    font-size: 12px;
+  }
+  .empty {
+    color: #aeaeae;
+    opacity: 0.25;
+    font-size: 12px;
+  }
+  .item-info {
+    color: #787885;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .see-more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .see-more a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #e02c6d;
+  }

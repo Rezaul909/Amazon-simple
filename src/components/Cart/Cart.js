@@ -32,9 +32,7 @@ const Cart = (props) => {
                 </button>
 
                 {props.children}
-                {/* <button className="review-btn mt-3 text-center border-0 p-3 ">
-                    Review Order &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
-                </button> */}
+                
             </div>
         </div>
     );

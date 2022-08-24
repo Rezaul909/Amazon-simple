@@ -29,7 +29,7 @@ const OrderReview = () => {
                 <Cart cart={cart} >
                     <Link to='/shop'>
                         <button className="review-btn mt-3 text-center border-0 p-3 ">
-                        Proceed Checkout &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
+                            Proceed Checkout &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
                         </button>
                     </Link>
                 </Cart>
