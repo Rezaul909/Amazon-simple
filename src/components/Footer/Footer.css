@@ -1,0 +1,33 @@
+.footer-section {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0826;
+    padding: 50px;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .footer-title {
+    font-size: 24px;
+    margin-bottom: 0;
+    color: white;
+  }
+  .copyright {
+    color: #d9dbe1;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-icons a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.212);
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+  }
+  .footer-icons a:hover {
+    transform: scale(1.2);
+  }

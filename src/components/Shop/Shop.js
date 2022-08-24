@@ -53,7 +53,7 @@ const Shop = () => {
                     products.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart} ></Product>)
                 }
             </div>
-            <div className="order-summery" fixed="top">
+            <div className="order-summery pb-5" fixed="top">
                 <Cart cart={cart}>
                     <Link to='/OrderReview'>
                         <button className="review-btn mt-3 text-center border-0 p-3 ">

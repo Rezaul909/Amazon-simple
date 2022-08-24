@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import OrderReview from './components/OrderReview/OrderReview';
@@ -18,6 +19,7 @@ function App() {
         <Route path='/OrderReview' element={<OrderReview></OrderReview>}></Route>
         <Route path='/SignUp' element={<SignUp></SignUp>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

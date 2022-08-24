@@ -49,7 +49,7 @@ const PopularProducts = () => {
                             <p class="price">$1800.80</p>
                             <div class="item-ratings">
                                 <div>
-                                    FontAwesomeIcon>
+                                    <FontAwesomeIcon className='text-warning' icon={faStar}></FontAwesomeIcon>
                                     <FontAwesomeIcon className='text-warning' icon={faStar}></FontAwesomeIcon>
                                     <FontAwesomeIcon className='text-warning' icon={faStar}></FontAwesomeIcon>
                                     <FontAwesomeIcon className='text-warning' icon={faStar}></FontAwesomeIcon>
