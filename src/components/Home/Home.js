@@ -6,12 +6,12 @@ import PopularProducts from '../PopularProducts/PopularProducts';
 const Home = () => {
     return (
         <div>
-            <div className='home-container'>
+            <div className='home-container pb-5'>
                 <div className="home-tile">
-                    <small>Sale Up to 70% off!</small>
-                    <h1>New Collection For Fall</h1>
+                    <h4 className='text-warning'>Sale Up to 70% off!</h4>
+                    <h1 className='mt-5'>New Collection For Fall</h1>
                     <p>Discover all the new arrivals of ready-to-wear collection.</p>
-                    <button>SHOP NOW</button>
+                    <button className='home-btn'>SHOP NOW</button>
                 </div>
                 <div className="home-banner">
                     <img src={banner} alt="" />

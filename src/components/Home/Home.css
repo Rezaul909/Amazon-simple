@@ -3,3 +3,19 @@
     display: flex;
     justify-content:space-evenly;
 }
+.home-tile{
+   margin-top: 30px;
+}
+.home-btn{
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+
+.home-banner{
+    
+}
