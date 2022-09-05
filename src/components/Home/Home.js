@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'
-import banner from '../../images/Home.PNG';
+import banner from '../../images/HomeMe.jpg';
 import PopularProducts from '../PopularProducts/PopularProducts';
 
 const Home = () => {

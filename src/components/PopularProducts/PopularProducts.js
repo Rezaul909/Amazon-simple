@@ -17,7 +17,7 @@ const PopularProducts = () => {
     <div className="my-5 pt-5 ">
       <section className="container">
         <div className="popular-collection">
-          <h2 className="popular-collections-title ">Popular Collection</h2>
+          <h1 className="popular-collections-title ">Popular Collection</h1>
           <div className="collection-items">
             <article className="item">
               <div className="item-image">

@@ -1,0 +1,10 @@
+.form-container{
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.submit-btn{
+    width: 100%;
+}
