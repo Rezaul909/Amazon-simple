@@ -18,8 +18,8 @@ const OrderReview = () => {
         removeFromDb(product.id);
     }
     return (
-        <div className='shop-container'>
-            <div className="review-item-container">
+        <div className='shop-container '>
+            <div className="review-item-container w-75 mx-auto">
                 {
                     cart.map(product=> <ReviewItem key={product.id} product={product} 
                         handleRemoveToCart={handleRemoveToCart} ></ReviewItem>)
