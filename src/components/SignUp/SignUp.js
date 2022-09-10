@@ -1,14 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const SignUp = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [createUserWithEmailAndPassword, user,loading] = useCreateUserWithEmailAndPassword(auth);
+    const navigate = useNavigate();
 
     const handleNameBlur = e =>{
         setName(e.target.value);
@@ -22,15 +26,25 @@ const SignUp = () => {
         setPassword(e.target.value);
         console.log(password);
     }
-    const handleError = e =>{
-        setError(e.target.value);
-        console.log(error);
+    
+    const handleFormSubmit = e =>{
+        e.preventDefault();
+        console.log("submitted");
+        if(password < 6){
+            setError('Password must be 6 character or more')
+        }
+        createUserWithEmailAndPassword(email,password);
     }
+
+    if(user){
+        navigate('/OrderReview');
+    }
+    
     return (
         <div className='form-container'>
             <h1 className='mt-4 text-center text-primary'>Sign Up First !</h1>
             <div className="mt-3 w-75 mx-auto">
-                <Form>
+                <Form onSubmit={handleFormSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Label>Enter your name</Form.Label>
                         <Form.Control onBlur={handleNameBlur} type="text" placeholder="Enter name" required/>
@@ -48,6 +62,13 @@ const SignUp = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                     </Form.Group>
+
+                    <p className='text-danger'>{error}</p>
+
+                    {
+                        loading && <p className='text-center'>Loading...</p>
+                    }
+                    
                     <Button className='submit-btn mx-auto' type="submit">
                         Sign Up
                     </Button>
