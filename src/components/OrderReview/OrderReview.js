@@ -27,9 +27,9 @@ const OrderReview = () => {
             </div>
             <div className="order-summery pb-5">
                 <Cart cart={cart} >
-                    <Link to='/shop'>
+                    <Link to='/shipment'>
                         <button className="review-btn mt-3 text-center border-0 p-3 ">
-                            Proceed Checkout &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
+                            Proceed to Shipment &#160; <FontAwesomeIcon icon={faArrowRight} ></FontAwesomeIcon>
                         </button>
                     </Link>
                 </Cart>
