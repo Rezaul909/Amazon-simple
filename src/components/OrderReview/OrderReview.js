@@ -7,6 +7,7 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './OrderReview.css';
 
 const OrderReview = () => {
     const [products, setProducts] = useProducts()
@@ -18,8 +19,8 @@ const OrderReview = () => {
         removeFromDb(product.id);
     }
     return (
-        <div className='shop-container '>
-            <div className="review-item-container w-75 mx-auto">
+        <div className='order-review '>
+            <div className="review-item-container mx-auto mb-5">
                 {
                     cart.map(product=> <ReviewItem key={product.id} product={product} 
                         handleRemoveToCart={handleRemoveToCart} ></ReviewItem>)

@@ -1,6 +1,7 @@
 .shop-container{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    padding-left: 25px;
 }
 
 .product-container{
@@ -12,4 +13,19 @@
 
 .order-summery{
     background-color: #FFE0B3;
+}
+
+
+
+@media only screen and (max-width:688px){
+    .shop-container{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5px;
+    }
+    
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0;
+    }
 }

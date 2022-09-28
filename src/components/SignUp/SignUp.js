@@ -69,9 +69,11 @@ const SignUp = () => {
                         loading && <p className='text-center'>Loading...</p>
                     }
                     
-                    <Button className='submit-btn mx-auto' type="submit">
-                        Sign Up
-                    </Button>
+                    <div className='submit-btn'>
+                        <Button className='w-100'  type="submit">
+                            Sign Up
+                        </Button>
+                    </div>
                 </Form>
                 <p className='mt-2 mb-5'>
                     Already have an account?  <Link to="/Login">Login</Link>

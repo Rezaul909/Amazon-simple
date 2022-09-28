@@ -1,12 +1,11 @@
 .product{
-    height: 550px;
+    height: 580px;
     width: 100%;
     /* border: 1px solid; */
     border-radius: 15px;
     position: relative;
 }
 .product img{
-    /* height: 50%; */
     padding: 7px;
     border-radius: 15px;
 }
@@ -22,4 +21,12 @@
 }
 .product-info button:hover{
     background-color: orange;
+}
+
+
+@media only screen and (max-width:688px){
+    .product{
+        height: auto;
+    }
+    
 }

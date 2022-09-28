@@ -18,7 +18,7 @@ const Product = (props) => {
               <Card.Body className="pt-1">
                 <Card.Title>{name} </Card.Title>
                 <h6>Price : ${price} </h6>
-                <Card.Text className="pt-4">
+                <Card.Text className="pt-4 mb-5">
                   Manufacturer : {seller} <br />
                   Ratings : {ratings}
                 </Card.Text>

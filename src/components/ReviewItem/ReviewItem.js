@@ -7,7 +7,7 @@ const ReviewItem = (props) => {
     const {product , handleRemoveToCart} = props;
     const {img, name, price, shipping, quantity} = product;
     return (
-        <div className='mx-5 mt-5 review-item'>
+        <div className=' mt-5 review-item'>
             <div className="img-container">
                 <img src={img} alt="" />
             </div>

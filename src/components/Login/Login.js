@@ -54,9 +54,12 @@ const Login = () => {
                     {
                         loading && <p className='text-center'>Loading...</p>
                     }
-                    <Button className='submit-btn' type="submit">
-                        Submit
-                    </Button>
+
+                    <div className='submit-btn'>
+                        <Button className='w-100' type="submit">
+                            Login
+                        </Button>
+                    </div>
                 </Form>
                 <p className='mt-2 mb-5'>
                     New at amazon? <Link to="/SignUp">Sign Up</Link>
